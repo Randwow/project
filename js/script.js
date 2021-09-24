@@ -7,7 +7,7 @@ const myArray = {
     firstName: "Bill",
     lastName: "Mat"
 };
-myArray.age = 50;
+myArray.age = 55;
 // console.log(4/0);
 // console.log('string ' / 9);
 // console.log(myArray);
