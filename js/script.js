@@ -90,21 +90,21 @@
 // writeYourGenres();
 // const calc = (a, b) => a + b;
 // console.log(calc(2,3));
-const options = {
-    name: 'Nichita',
-    lastname: 'Macheev',
-    Univ: 'UTM',
-    Group: 'TI-197',
-    DT: {
-        course_one:'done',
-        course_two:'done',
-    }
-}
-console.log(Object.keys(options).length);
-let number = Object.keys(options);
-console.log(number);
-const {course_one, course_two} = options.DT;
-console.log(course_one);
+// const options = {
+//     name: 'Nichita',
+//     lastname: 'Macheev',
+//     Univ: 'UTM',
+//     Group: 'TI-197',
+//     DT: {
+//         course_one:'done',
+//         course_two:'done',
+//     }
+// }
+// console.log(Object.keys(options).length);
+// let number = Object.keys(options);
+// console.log(number);
+// const {course_one, course_two} = options.DT;
+// console.log(course_one);
 // for (const key in options) {
 //     if (typeof(options[key]) === 'object') {
 //         for(let i in options[key])
@@ -114,3 +114,36 @@ console.log(course_one);
 //     }
     
 // }
+// const arr = [6, 32, 63, 24, 5];
+    // arr.push(8);
+    // console.log(arr );
+    // console.log(arr.length);
+    // console.log(arr);
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);    
+    // }
+    // arr.forEach(function(item, i, arr){
+    //     console.log(`${i} : ${item} внутри массива ${arr}`);
+    // });
+    // for (const value of arr) {
+    //     console.log(value);
+    // }
+    // arr.sort(compareNum);
+    // console.log(arr);
+    // function compareNum(a, b){
+    //     return a-b;
+    // }
+const soldier = {
+    health: 400, 
+    armor: 100,
+    sayHello: function(){
+        console.log('Hello');
+    }
+}
+const john = {
+    health: 100
+}
+// const john = Object.create(soldier);
+Object.setPrototypeOf(john, soldier);
+console.log(john.armor);
+john.sayHello();
